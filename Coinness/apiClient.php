@@ -77,7 +77,6 @@ class apiClient{
 		$params['app_id'] = $this->app_id;
 		$params['timestamp'] = time();
 		ksort($params);
-		echo http_build_query($params).$this->app_sercet;
 		$params['sign'] = md5(http_build_query($params).$this->app_sercet);
 		
 		return $params;
