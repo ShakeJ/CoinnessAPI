@@ -1,12 +1,12 @@
 # CoinnessAPI
 CoinnessAPI 是用于调用  Coinness.com 提供相关接口的PHP端程序包。使用此接口，需要先联系 Coinness.com 申请 APP_ID 和 APP_SERCET。
-The CoinnessAPI is a PHP side package used to invoke the interface provided by Coinness.com. To use this interface, you need to contact Coinness.com to apply for APP_ID and APP_SERCET.
 
 ## 接口 interface
 
 ### getNewsflashList
-获取快讯列表，请求参数包括：
+获取快讯列表
 
+#### 请求参数
 | 参数 | 类型 | 是否必须 | 默认值 | 说明 |
 |-----|------|--------|-------|------|
 | language | string | 是 | | 快讯的语言，可以使用 COINNESS_LANGUAGE_* 指定	|
@@ -47,13 +47,11 @@ The CoinnessAPI is a PHP side package used to invoke the interface provided by C
 
 ### getNewsflashUpdated
 获取最近8小时有修改或者删除的快讯（如果发布后未修改的，不会返回）
-
+#### 请求参数
 | 参数 | 类型 | 是否必须 | 默认值 | 说明 |
 |-----|------|--------|-------|------|
 | language | string | 是 |  | 快讯的语言，可以使用 COINNESS_LANGUAGE_* 指定	|
 
-返回值：
- * 所有请求参数都将返回
 #### 返回值
 | 名称 | 类型 |	说明	|
 |-----|----|----|
