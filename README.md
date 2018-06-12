@@ -47,9 +47,10 @@ The CoinnessAPI is a PHP side package used to invoke the interface provided by C
 
 ### getNewsflashUpdated
 获取最近8小时有修改或者删除的快讯（如果发布后未修改的，不会返回）
+
 | 参数 | 类型 | 是否必须 | 默认值 | 说明 |
 |-----|------|--------|-------|------|
-| language | string | 是 | | 快讯的语言，可以使用 COINNESS_LANGUAGE_* 指定	|
+| language | string | 是 |  | 快讯的语言，可以使用 COINNESS_LANGUAGE_* 指定	|
 
 返回值：
  * 所有请求参数都将返回
