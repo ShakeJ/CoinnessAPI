@@ -1,8 +1,9 @@
 # CoinnessAPI
 CoinnessAPI 是用于调用  Coinness.com 提供相关接口的PHP端程序包。使用此接口，需要先联系 Coinness.com 申请 APP_ID 和 APP_SERCET。
-
+## 调用须知
+1. 定时轮询的方式（每个10秒），调用 getNewsflashList 方法，获取最新的快讯，只需要传递 language 和 start_time 即可，start_time 可以使用上次请求到的快讯的发布时间；
+2. 定时轮询的方式（建议每隔30秒）调用 getNewsflashUpdated 方法，获取发布后发生修改的快讯，从而保证快讯内容与 coinness 同步；
 ## 接口 interface
-
 ### getNewsflashList
 获取快讯列表
 
