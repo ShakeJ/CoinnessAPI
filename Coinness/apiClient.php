@@ -38,7 +38,10 @@ class apiClient{
 	 * @return
 	 */
 	public function getNewsflashList($language,$start_time=0,$end_time=0,$size=150){
-		$params = array('language'=>$language,'start_time'=>$start_time,'end_time'=>$end_time,'size'=>$size);
+		$params = array('language'=>$language);
+		$start_time && $params['start_time'] = $start_time;
+		$end_time && $params['end_time'] = $end_time;
+		$size && $params['size'] = $size;
 		
 		return $this->get('newsflash/list', $params);
 	}
