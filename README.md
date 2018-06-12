@@ -1,0 +1,2 @@
+# CoinnessAPI
+Coinness API
