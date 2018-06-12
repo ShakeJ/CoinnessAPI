@@ -7,13 +7,13 @@ const COINNESS_LANGUAGE_KO = 4;
 
 class apiClient{
 
-// 	CURL 请求相关参数
+// 	CURL requests the relevant parameters
 	public $useragent = 'Coinness PHPSDK v1.x';
 	public $connecttimeout = 2;
 	public $timeout = 30;
 	public $ssl_verifypeer = FALSE;
 	
-// 	CURL 请求状态相关数据
+// 	CURL requests state-related data
 	public $http_header = array();
 	public $http_code;
 	public $http_info;
