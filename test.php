@@ -11,4 +11,4 @@ $client = new apiClient($app_id, $app_sercet);
 
 $newsflash_list = $client->getNewsflashList(COINNESS_LANGUAGE_KO);
 
-var_dump($newsflas_list);
+var_dump($newsflash_list);
