@@ -35,6 +35,7 @@ CoinnessAPI 是用于调用  Coinness.com 提供相关接口的PHP端程序包�
 | items | array of newsflash | 快讯记录（如果指定的条件找不到合适的快讯内容，会返回空的 array ，但是不会报错）|
 
 每个newsflash 包含：
+
 | 名称 | 类型 | 说明 |
 |----|----|----|
 | id | int | 快讯的编号 |
