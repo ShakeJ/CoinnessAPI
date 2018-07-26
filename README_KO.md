@@ -36,6 +36,7 @@ Coinness API는 Coinness.com이 제공하는 관련 인터페이스를 호출하
 | items | array of newsflash | 뉴스피드 기록 (지정된 조건으로 해당하는 뉴스피드 내용을 못 찾을 시, 비어있는 array를 반환하지만 오류 알람은 없음)|
 
 각 newsflash가 포함하는 내용: 
+
 | 명칭 | 유형 | 설명 | 
 |----|----|----| 
 | id | int | 뉴스피드 번호 | 
@@ -43,6 +44,7 @@ Coinness API는 Coinness.com이 제공하는 관련 인터페이스를 호출하
 | content | string | 뉴스피드 내용 (미 삭제 뉴스피드 시, 내용/제목 중 하나가 올라감) | 
 | link | string | 뉴스피드 관련 내용 링크주소 | 
 | link_title | string | 뉴스피드 관련 내용 링크주소의 링크제목 (link가 공백일 시, 해당 파라미터 생략）| 
+| rank | 0/1 | 중요 뉴스인지 여부, 1 : 중요, 0 : 보통 |
 | issue_time | int | 뉴스피드 업로드 시간 (이용자에게 보여질 시간) | 
 | update_time | int | 뉴스피드 수정 시간 | 
 | deleted | 0/1 | 삭제여부, 0: 미 삭제; 1: 삭제; 주의사항: 이미 삭제된 뉴스피드는 title과 content를 반환하지 않음 |
