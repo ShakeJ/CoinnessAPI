@@ -43,6 +43,7 @@ CoinnessAPI 是用于调用  Coinness.com 提供相关接口的PHP端程序包�
 | content | string | 快讯内容（如果未删除的快讯，内容和标题，至少会有一个）|
 | link | string | 快讯相关内容的延伸阅读地址 | 
 | link_title | string | 快讯相关内容的延伸阅读地址的链接标题（如果 link为空时候，请忽略此参数）|
+| rank | 0/1 | 是否重要的快讯，1：重要的，0：普通的 |
 | issue_time | int | 快讯发布时间（展示给最终用户的）|
 | update_time | int | 快讯最后修改时间 | 
 | deleted | 0/1 | 是否已经删除，0：未删除；1：删除；注意：如果已删除，不会返回 title 和 content | 
